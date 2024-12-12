@@ -1,0 +1,200 @@
+.crud__component {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-image: url("../../assets/image/bg.png");
+    background-size: cover;
+    overflow-y: auto;
+
+    .crud {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 50px;
+
+        .crud__top__content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .crud__component__text {
+                font-size: 44px;
+                color: #023c76;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+
+            .crud__component__form {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 24px;
+
+                .crud__component__form__group {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 24px;
+
+                    .crud__component__form__input {
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 12px;
+                        outline: none;
+                        border: 1px solid #023c76;
+                        background: none;
+                        padding: 0px 16px;
+                        font-size: 18px;
+                        color: #001f3e;
+                    }
+                }
+
+                .crud__component__form__input {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 12px;
+                    outline: none;
+                    border: 1px solid #023c76;
+                    background: none;
+                    padding: 0px 16px;
+                    font-size: 18px;
+                    color: #001f3e;
+                }
+
+                .crud__component__form__btn {
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 12px;
+                    background: dodgerblue;
+                    color: white;
+                    font-size: 18px;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    transition: .2s;
+
+                    &:hover {
+                        background: none;
+                        border-color: dodgerblue;
+                        color: dodgerblue;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+
+        .crud__component__box {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 70px;
+            gap: 40px;
+
+            .crud__component__box__nomsiz {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
+
+                .crud__component__box__card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+
+                    .crud__component__box__card__box {
+                        max-width: 200px;
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 12px;
+
+                        .crud__component__box__card__box__image {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 12px;
+                        }
+                    }
+                    .text__group{
+                        display: flex;
+                        align-items: start;
+                        justify-content: start;
+                        flex-direction: column;
+                        gap: 16px;
+                        .crud__component__box__card__group__name{
+                            font-size: 16px;
+                            color: dodgerblue;
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                        }
+                        .crud__component__box__card__group__name span{
+                            font-size: 16px;
+                            color: red;
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                        }
+                    }
+                    
+                }
+                .btn__group{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 50px;
+                    margin-top: 20px;
+                    .btn__group__delete{
+                        width: 200px;
+                        height: 44px;
+                        border-radius: 12px;
+                        background: red;
+                        color: white;
+                        cursor: pointer;
+                        transition: .3s;
+                        border: 1px solid transparent;
+                        &:hover{
+                            background: none;
+                            color: red;
+                            border-color: red;
+                            transition: .2s;
+                        }
+                    }
+                    .btn__group__edit{
+                        width: 200px;
+                        height: 44px;
+                        border-radius: 12px;
+                        background: gold;
+                        color: white;
+                        cursor: pointer;
+                        transition: .3s;
+                        border: 1px solid transparent;
+                        &:hover{
+                            background: none;
+                            color: gold;
+                            border-color: gold;
+                            transition: .2s;
+                        } 
+                    }
+                }
+            }
+
+        }
+    }
+}
+
